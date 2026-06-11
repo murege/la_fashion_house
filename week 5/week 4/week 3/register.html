@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Fashion House Register</title>
+</head>
+
+<body>
+
+<form id="registerForm">
+  <h2>Register - La Fashion House</h2>
+
+  <input type="text" id="fullname" placeholder="Full Name"><br><br>
+  <input type="email" id="email" placeholder="Email"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
+
+  <button type="submit">Register</button>
+
+  <p id="error" style="color:red;"></p>
+</form>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let fullname = document.getElementById("fullname").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+  let confirmPassword = document.getElementById("confirmPassword").value.trim();
+  let error = document.getElementById("error");
+
+  error.textContent = "";
+
+  if (fullname === "" || email === "" || password === "" || confirmPassword === "") {
+    error.textContent = "All fields are required!";
+    return;
+  }
+
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    error.textContent = "Please enter a valid email!";
+    return;
+  }
+
+  if (password.length < 6) {
+    error.textContent = "Password must be at least 6 characters!";
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    error.textContent = "Passwords do not match!";
+    return;
+  }
+
+  alert("Registration successful!");
+  this.reset();
+});
+</script>
+
+</body>
+</html>
