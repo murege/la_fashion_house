@@ -1,9 +1,11 @@
 <?php
 session_start();
 include('db.php');
-
-$email = $_POST['email'];
-$password = $_POST['password'];
+if(isset ($_POST['login']))
+    {
+$email =strtolower(trim($_POST['email']));
+$password = trim($_POST['password']);
+    }
 
 $sql = "SELECT * FROM users
         WHERE email='$email'
