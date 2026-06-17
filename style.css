@@ -1,0 +1,253 @@
+:root{
+    --black:#0d0d0d;
+    --pink:#ff2e93;
+    --soft-pink:#ff7ab6;
+    --white:#ffffff;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f8f8;
+}
+
+/* NAVBAR */
+.navbar{
+    background: var(--black);
+    padding: 15px;
+}
+
+.navbar-brand{
+    color: var(--pink) !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-link{
+    color: white !important;
+    margin-right: 10px;
+}
+
+.nav-link:hover{
+    color: var(--pink) !important;
+}
+
+/* HERO SECTION */
+.hero{
+    height: 85vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.8)
+    ),
+    url('../images/fashion-hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--pink);
+    letter-spacing: 3px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-fashion{
+    background: var(--pink);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-fashion:hover{
+    background: var(--soft-pink);
+    transform: scale(1.05);
+}
+
+/* PRODUCT CARDS */
+.product-card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+}
+
+.product-card img{
+    height: 280px;
+    object-fit: cover;
+}
+
+/* SECTION TITLE */
+.section-title{
+    text-align:center;
+    font-weight:bold;
+    margin: 50px 0 20px;
+    color: var(--black);
+}
+
+.section-title span{
+    color: var(--pink);
+}
+
+/* FOOTER */
+.footer{
+    background: var(--black);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer span{
+    color: var(--pink);
+}
+.product-card img{
+    height:300px;
+    width:100%;
+    object-fit:cover;
+}
+
+.product-card{
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: pink;
+}
+
+/* CONTAINER */
+.container {
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: pink;
+    color: black;
+}
+
+/* DASHBOARD BOXES */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #45a049;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
