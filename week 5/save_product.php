@@ -1,19 +1,19 @@
 <?php
+include('db.php');
 
-include('config/db.php');
+if(isset($_POST['product_name'])){
 
-$product_name = $_POST['product_name'];
-$category = $_POST['category'];
-$description = $_POST['description'];
-$price = $_POST['price'];
+    $name = $_POST['product_name'];
+    $category = $_POST['category'];
+    $description = $_POST['description'];
+    $price = $_POST['price'];
+    $image = $_POST['image'];
 
-$sql = "INSERT INTO products
-(product_name, category, description, price)
+    $query = "INSERT INTO products (product_name, category, description, price, image)
+              VALUES ('$product_name', '$category', '$description', '$price', '$image')";
 
-VALUES
-('$product_name','$category','$description','$price')";
+    mysqli_query($conn, $query);
 
-mysqli_query($conn,$sql);
-
-header("Location: manage_products.php");
+    header("Location: products.php");
+}
 ?>
