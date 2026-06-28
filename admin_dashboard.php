@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-// SECURITY FIRST
-if (!isset($_SESSION['admin'])) {
+// 🔒 BLOCK NON-ADMINS
+if(!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin'){
     header("Location: login.php");
     exit();
 }
-
 include('db.php');
 include('includes/header.php');
 include('includes/navbar.php');

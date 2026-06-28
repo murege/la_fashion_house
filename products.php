@@ -13,7 +13,6 @@ include('db.php');
         Discover our latest fashion pieces carefully selected
         for style, elegance, and comfort.
     </p>
-
     <!-- ================= WOMEN COLLECTION ================= -->
     <h2 class="section-title text-center mb-4">
         Women's <span>Collection</span>

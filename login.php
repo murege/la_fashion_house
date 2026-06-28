@@ -39,9 +39,7 @@ if(isset($_POST['login'])) {
                 header("Location:index.php");
             }
 
-            // REDIRECT TO INDEX
-            header("Location: index.php");
-            exit();
+            
 
         } else {
             $error = "Incorrect password!";

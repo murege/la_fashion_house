@@ -33,19 +33,7 @@ include('includes/navbar.php');
             </div>
         </div>
 
-        <!-- Orders -->
-        <div class="col-md-3 mb-4">
-            <div class="card shadow text-center h-100">
-                <div class="card-body">
-                    <h2>📦</h2>
-                    <h5>My Orders</h5>
-                    <p>Track all your purchases.</p>
-                    <a href="orders.php" class="btn btn-primary">
-                        View Orders
-                    </a>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Cart -->
         <div class="col-md-3 mb-4">
